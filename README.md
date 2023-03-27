@@ -33,7 +33,7 @@ El proyecto fue realizado por Macarena Bernal Ramírez: Diseñadora UX/UI & Full
 
 ### Contacto
 
-<a href="https://www.linkedin.com/in/macarena-bernal-ramirez/">Linkedin</a>
-<a href="https://www.behance.net/macarenbernal">Behance</a>
-<a href="https://github.com/Mcsand22">Github</a>
-<a href="https://mcsand22.github.io/Bym-web/">Web</a>
+* <a href="https://www.linkedin.com/in/macarena-bernal-ramirez/">Linkedin</a>
+* <a href="https://www.behance.net/macarenbernal">Behance</a>
+* <a href="https://github.com/Mcsand22">Github</a>
+* <a href="https://mcsand22.github.io/Bym-web/">Web</a>
