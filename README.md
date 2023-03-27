@@ -29,6 +29,7 @@ El proyecto fue realizado por Macarena Bernal Ramírez: Diseñadora UX/UI & Full
 * JAVA
 * Spring
 * Maven
+* Swagger
 
 ***
 
