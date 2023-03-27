@@ -1,0 +1,275 @@
+.toDoContainer {
+  width: 300px;
+  margin-bottom: 50px;
+  background-color: rgba(197, 188, 188, 0.573);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.inProcessContainer {
+  width: 300px;
+  height: fit-content;
+  margin-bottom: 50px;
+  background-color: rgba(197, 188, 188, 0.573);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.board h3 {
+  background-color: var(--background);
+  color: white;
+  width: 300px;
+  height: 80px;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.board a {
+  align-self: center;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  background-color: var(--background);
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  box-shadow: var(--shadow);
+  font-size: 1.5rem;
+}
+
+#taskContainerToDo {
+  display: flex;
+  min-height: 150px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.toDoContainer{
+  height: fit-content;
+}
+
+#taskContainerProcess,
+#taskContainerDone {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 150px;
+  margin-top: 20px;
+}
+
+#taskContainerProcess>.cardValue>.titleToDo {
+  background-color: rgba(193, 167, 33, 0.85);
+  transition: all 1s;
+}
+
+#taskContainerDone>.cardValue>.titleToDo {
+  background-color: rgba(33, 193, 87, 0.85);
+  transition: all 1s;
+}
+
+.cardVacia {
+  height: 50px;
+}
+
+/* CREAR CARD */
+
+.formularioCard {
+  width: 250px;
+  height: 150px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.taskContainerToDo {
+  margin: auto;
+}
+
+.titleToDo {
+  margin-top: 20px;
+  width: 250px;
+  height: 40px;
+  background: rgba(193, 33, 90, 0.85);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.confirmCard {
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(85, 176, 63);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.sumarParticipantes,
+.createCard {
+  color: white;
+  text-align: center;
+  display: flex;
+  background-color: var(--background);
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  box-shadow: var(--shadow);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.createCard {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.formularioCard input {
+  border: none;
+  width: 250px;
+  height: 100px;
+}
+
+.descriptionToDo,
+.descriptionToDo2 {
+  background-color: white;
+  height: fit-content;
+  transition: all 1s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 250px;
+  display: flex;
+  padding-left: 5px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.descriptionToDo:focus,
+.descriptionToDo2:focus {
+  outline: none;
+}
+
+.edicion {
+  height: fit-content;
+  margin-right: 10px;
+  width: 100%;
+  color: var(--background);
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.cdk-drag{
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+}
+
+.boardTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editar {
+  color: var(--background);
+  background-color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.newCard {
+  margin-top: 20px;
+  margin: auto;
+}
+
+.cancelEdit,
+.confirmEdit {
+  color: white;
+  border: none;
+  padding: 5px;
+  width: 28px;
+  margin: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.cancelEdit {
+  background-color: #CB1329;
+}
+
+.confirmEdit {
+  background-color: rgba(33, 193, 87, 0.85);
+}
+
+.cardValue {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cardVacia{
+  display: none;
+}
+
+

@@ -1,0 +1,40 @@
+<app-header></app-header>
+<app-loader></app-loader>
+<app-darkmode></app-darkmode>
+<main>
+    <button *ngIf="!avatarUrl" type="button" class="fotoPerfil" (click)="buscarGithub()">
+      <i class="fa-solid fa-user"></i>
+    </button>
+  <img *ngIf="avatarUrl" class="imgPerfil" [src]="avatarUrl" alt="Foto de perfil"
+       id="profileImage">
+    <form action="" method="" class="formRegister">
+      <label for="nameProfile" name="name">Nombre </label>
+      <input type="text" name="name" readonly id="nameProfile" required/>
+    <label for="lastnameProfile" name="lastname">Apellido</label>
+    <input
+      type="text"
+      name="lastname"
+      readonly="true"
+      id="lastnameProfile" required
+    />
+    <label for="mailProfile" name="mail">Mail</label>
+    <input type="email" name="mail" readonly id="mailProfile" required/>
+    <label for="passProfile" name="password">Contraseña</label>
+      <div class="contenedorPass">
+        <input type="password" readonly id="passProfile" required/>
+        <span class="password-toggle" (click)="togglePasswordVisibility()" aria-label="Toggle password visibility">
+  <i class="fa fa-eye"></i>
+</span>
+      </div>
+    <section class="buttonsContainer">
+      <button class="transform editProfile" *ngIf="!editing" (click)="onEditProfile()">
+        <i class="fa-solid fa-pen"></i>
+      </button>
+      <button class="transform saveProfile" *ngIf="editing" (click)="onSaveProfile()" >
+        <i class="fa-solid fa-save"></i>
+      </button>
+      <button class="transform logOut" (click)="logOut()"><i class="fa-solid fa-right-from-bracket"></i></button>
+    </section>
+  </form>
+</main>
+<app-footer></app-footer>

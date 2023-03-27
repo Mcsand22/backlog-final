@@ -1,0 +1,111 @@
+.miPerfilTitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.formRegister {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 50vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.formRegister label {
+  font-size: 1.5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.formRegister > input {
+  height: 35px;
+  border: none;
+  border-bottom: solid 1px #343131;
+}
+
+.formRegister > .contenedorPass > input {
+  height: 35px;
+  border: none;
+  border-bottom: solid 1px #343131;
+  width: 100%;
+}
+
+.formRegister > section > button {
+  background-color: var(--background);
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+  border: none;
+  align-self: center;
+  margin-top: 20px;
+  color: white;
+  box-shadow: var(--shadow);
+  margin: 20px;
+}
+
+.fotoPerfil, .imgPerfil {
+  background-color: var(--background);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: var(--shadow);
+  margin: auto;
+  font-size: 3rem;
+  margin-top: 50px;
+  border: none;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.formRegister input:active {
+  outline: transparent;
+  border-bottom: solid var(--bordo) 2px;
+}
+
+.formRegister input:focus {
+  outline: transparent;
+  border-bottom: solid var(--bordo) 2px;
+}
+
+.buttonsContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.logOut, .editProfile{
+  cursor:pointer;
+}
+
+.saveProfile{
+  cursor: pointer;
+}
+
+.imgPerfil{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1
+}
+
+.password-toggle i {
+  font-size: 1.5rem;
+  color: #ccc;
+  z-index: 1
+}
+
+
+

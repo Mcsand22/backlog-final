@@ -1,0 +1,48 @@
+<div class="board">
+  <section class="toDoContainer">
+    <h3>To do</h3>
+    <div class="newCard" *ngIf="showForm" >
+      <form (submit)="createCard()" #form="ngForm">
+        <input [(ngModel)]="newCard.titulocard" name="title" class="titleToDo" required>
+        <input [(ngModel)]="newCard.descriptioncard" name="description" class="descriptionToDo"
+               required>
+        <button class="confirmCard transform" type="submit"><i class="fa-solid fa-check"></i></button>
+      </form>
+    </div>
+    <section id="taskContainerToDo" [attr.estado]="todo" cdkDropList
+             [cdkDropListData]="cardservice.cards"
+      (cdkDropListDropped)="drop($event)">
+      <app-card *ngFor="let card of cardservice.cards" [card]="card"
+                cdkDrag [cdkDragData]="{id: card.idcards}"></app-card>
+      <a class="createCard transform" (click)="showForm = true"><i class="fa-solid fa-plus"></i></a>
+      <div class="cardVacia" *ngIf="cardservice.cards.length === 0">
+        <p>No hay tarjetas cargadas</p>
+      </div>
+
+    </section>
+  </section>
+
+  <section class="inProcessContainer">
+    <h3>In process</h3>
+    <section id="taskContainerProcess" [attr.estado]="process" cdkDropList
+             [cdkDropListData]="cardservice.inProcessCards"
+      (cdkDropListDropped)="drop($event)">
+      <div class="cardVacia" *ngIf="cardservice.inProcessCards.length === 0">
+        <p>No hay tarjetas en proceso</p>
+      </div>
+      <app-card *ngFor="let card of cardservice.inProcessCards" [card]="card" cdkDrag [cdkDragData]="{id: card.idcards}"></app-card>
+    </section>
+  </section>
+
+  <section class="inProcessContainer">
+    <h3>Done</h3>
+    <section id="taskContainerDone" [attr.estado]="done" cdkDropList
+             [cdkDropListData]="cardservice.doneCards"
+      (cdkDropListDropped)="drop($event)">
+      <div class="cardVacia" *ngIf="cardservice.doneCards.length === 0">
+        <p>No hay tarjetas completadas</p>
+      </div>
+      <app-card *ngFor="let card of cardservice.doneCards" [card]="card" cdkDrag [cdkDragData]="{id: card.idcards}"></app-card>
+    </section>
+  </section>
+</div>

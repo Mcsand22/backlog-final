@@ -1,0 +1,59 @@
+.contenedor{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedorIndex{
+  height: 100vh;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.index {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  margin: auto;
+}
+
+.logoInicio {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.logoInicioImg {
+  width: 40vw;
+  max-width: 50%;
+}
+
+.sectionBtn {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+
+.bienvenida{
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  font-size: 2rem;
+  background-image: url("/assets/img/first-board.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  height: 100vh;
+}
+.bienvenidaParrafo{
+  background: aliceblue;
+  opacity: 0.8;
+  width: 60%;
+  margin: auto;
+  margin-top: 30%;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+}

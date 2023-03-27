@@ -1,0 +1,27 @@
+<app-header></app-header>
+<app-loader></app-loader>
+<main class="mainBoard" *ngIf="board" [style.background-image]="'url(' + board.img + ')'">
+  <div class="editBoard">
+    <h1 class="boardTitle">
+      <ng-container *ngIf="!isEditing; else editingTemplate">{{ title }}</ng-container>
+      <ng-template #editingTemplate>
+        <input class="boardTitleEdit" [(ngModel)]="title" type="text">
+        <button class="check transform" (click)="onSaveClick()"><i class="fa-solid fa-check"></i></button>
+      </ng-template>
+      <button *ngIf="!isEditing" class="editar" id="editar" (click)="onEditClick()">
+        <i class="fa-solid fa-pen"></i>
+      </button>
+    </h1>
+    <div class="editAndDelete">
+      <button class="transform editBackground" (click)="cambiarFondo()"><i class="fa-solid fa-pen"></i></button>
+      <button class="transform editBackground" id="delete" (click)="deleteBoard(board)">
+        <i
+          class="fa-solid fa-trash-can"></i>
+      </button>
+    </div>
+  </div>
+  <section class="boards" cdkDropListGroup>
+    <app-todo></app-todo>
+  </section>
+</main>
+<app-footer></app-footer>

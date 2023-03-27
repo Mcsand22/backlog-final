@@ -1,0 +1,116 @@
+main{
+  min-height: 71.05vh;
+  padding-top: 20px;
+}
+.boardTitle,
+.boardParticipantes{
+  display: flex;
+  justify-content: space-between;
+  width: 191px;
+  background-color: var(--background);
+  font-size: 2rem;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  color: white;
+  vertical-align: center;
+  padding: 15px;
+  margin-left: 40px;
+}
+
+.boardTitleEdit{
+  background-color: var(--background);
+  color: white;
+  font-size: 2rem;
+  font-weight: var(--bold);
+  border: none;
+  width: 150px;
+  border-bottom: solid #c1215a 1px;
+}
+
+.boardTitleEdit:focus{
+  outline: transparent;
+  border-bottom: solid #c1215a 1px;
+}
+
+.fa-check{
+  color: white;
+  border: none;
+}
+
+.check{
+  border: none;
+  outline: transparent;
+  text-decoration: none;
+  background-color: var(--background);
+  cursor: pointer;
+}
+
+.boardParticipantes {
+  margin-top: 10px;
+}
+
+.participantes {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.sumarParticipantes,
+.board a{
+  color: white;
+  text-align: center;
+  display: flex;
+  background-color: var(--background);
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  box-shadow: var(--shadow);
+  font-size: 1.5rem;
+}
+
+.boards {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+
+.editar {
+  background-color: var(--background);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.mainBoard{
+  margin-top: 0;
+  background-image: url("/assets/img/background.png");
+  background-size: cover;
+}
+
+.editBoard{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.editBackground{
+  background-color: var(--background);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+#delete:hover{
+  background-color: #CB1329;
+}
+

@@ -1,0 +1,17 @@
+<form class="card" id="processCard" cdkDragData="data de la tarjeta" #form="ngForm">
+  <input [(ngModel)]="card.titulocard" name="title" class="titleToDo" [readonly]="!card.editing"
+         required>
+  <input [(ngModel)]="card.descriptioncard" name="description" class="descriptionToDo"
+         [readonly]="!card.editing" required>
+  <section class="edicion">
+    <button class="editar transform" *ngIf="!card.editing" (click)="card.editing = true;
+    cards.originalTitle = card.titulocard; cards.originalDescription = card.descriptioncard"><i
+      class="fa-solid fa-pen"></i></button>
+    <button class="editar transform" *ngIf="!card.editing" (click)="deleteCard(card)"><i
+        class="fa-solid fa-trash-can"></i></button>
+    <button class="cancelEdit transform" *ngIf="card.editing" (click)="card.editing = false"><i
+      class="fa-solid fa-times"></i></button>
+    <button class="confirmEdit transform" *ngIf="card.editing" (click)="saveCard()"><i
+        class="fa-solid fa-check"></i></button>
+  </section>
+</form>

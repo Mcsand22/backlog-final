@@ -1,0 +1,38 @@
+.formInput:hover .password-toggle i {
+  top: 72%;
+}
+
+#passwordLogIn:hover .password-toggle i{
+  top: 70%;
+}
+.errorText{
+  font-weight: var(--regular);
+  font-size: 1.2rem;
+  color: red;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1
+}
+
+.password-toggle i {
+  font-size: 1.5rem;
+  color: #ccc;
+  z-index: 1
+}
+
+.noaccount{
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.noaccount a {
+  text-decoration: none;
+  color: #c1215a;
+}

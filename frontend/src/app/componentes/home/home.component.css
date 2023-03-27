@@ -1,0 +1,36 @@
+.mainHome {
+  margin: 60px 0;
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.newBoard > a,
+.profile > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.newBoard,
+.profile {
+  width: 200px;
+  height: 113px;
+  left: 80px;
+  top: 397px;
+  background: #343131;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+}

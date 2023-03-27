@@ -1,0 +1,18 @@
+<section>
+  <section class="board-container">
+    <button class="pre-btn"><img src="assets/img/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="assets/img/arrow.png" alt=""></button>
+    <section *ngFor="let board of boards" class="boardContainerEvent">
+      <section class="board-card">
+        <a class="boardCardLink" (click)="navigateToBoard(board)">
+          <figure class="board-image">
+            <img [src]="board.img" class="board-thumb" alt="tu tablero">
+          </figure>
+          <figcaption class="board-info">
+            <h2 class="board-brand">{{ board.tituloboard  }}</h2>
+          </figcaption>
+        </a>
+      </section>
+    </section>
+  </section>
+</section>

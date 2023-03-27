@@ -1,0 +1,92 @@
+.board-container {
+  padding: 0 8vw;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 200px;
+}
+
+.board-container::-webkit-scrollbar {
+  display: none;
+}
+
+.board-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.boardCardLink{
+  cursor: pointer;
+}
+
+.board-image {
+  position: relative;
+  height: 100px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.board-image img {
+  width: 200px;
+  height: 100%;
+}
+
+.board-info {
+  padding: 10px;
+  background-color: #343131;
+  opacity: 80%;
+  color: #fff;
+  width: 200px;
+  box-shadow: var(--shadow);
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 8vw;
+  height: 35%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+  background-color: white;
+  transition: all 1s ease;
+}
+
+
+.modo-oscuro {
+  background-color: #474444;
+  transition: all 1s ease;
+}
+
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+  transition: all 1s ease;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+

@@ -1,0 +1,16 @@
+footer {
+  background-color: var(--background);
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: var(--bold);
+  color: white;
+  align-items: center;
+}
+
+.footerLogo{
+  width: 10%;
+  max-width: 5vw;
+}

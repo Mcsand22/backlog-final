@@ -1,0 +1,35 @@
+<app-loader></app-loader>
+<main class="bodyForm">
+  <img class="bodyFormImg" src="assets/img/logo-backlog.svg" alt="logo de backlog" />
+  <section>
+    <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <label class="formLabel" for="mailLogIn">Mail</label>
+      <input class="formInput" type="email" formControlName="mail" id="mailLogIn"/>
+      <div *ngIf="loginForm.controls['mail'].invalid && (loginForm.controls['mail'].dirty || loginForm.controls['mail'].touched)">
+        <p class="errorText" *ngIf="loginForm.controls['mail'].errors?.['required']">* Este campo
+          debe
+          estar completo</p>
+        <p class="errorText" *ngIf="loginForm.controls['mail'].errors?.['email']">* Debes
+          ingresar un email válido</p>
+      </div>
+      <label class="formLabel" for="passwordLogIn">Contraseña</label>
+      <div class="contenedorPass">
+        <input class="formInput" type="password" formControlName="password" id="passwordLogIn"/>
+        <span class="password-toggle" (click)="togglePasswordVisibility()" aria-label="Toggle password visibility">
+  <i class="fa fa-eye"></i>
+</span>
+      </div>
+      <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty
+       ||
+      loginForm.controls['password'].touched)">
+        <p class="errorText">* Este campo debe estar completo</p>
+      </div>
+      <div *ngIf="credencialesInvalidas" class="errorText">Credenciales
+        inválidas</div>
+      <button class="btn" [disabled]="loginForm.invalid">Iniciar sesión</button>
+    </form>
+    <article class="noaccount">¿No tienes cuenta?
+      <a routerLink="/register"><b>Registrate</b></a>
+    </article>
+  </section>
+</main>

@@ -1,0 +1,25 @@
+.darkmode{
+  position: absolute;
+  bottom: 81%;
+  right: 3%;
+  background-color: #343131;
+  border: #343131 solid 1px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px;
+  font-weight: var(--bold);
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.darkmode{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transform:hover{
+  transform: scale(1.1);
+}
+

@@ -1,0 +1,26 @@
+<app-header></app-header>
+<app-loader></app-loader>
+<main class="mainHome">
+  <app-carrousel></app-carrousel>
+  <app-darkmode></app-darkmode>
+  <section class="actions">
+    <article class="newBoard transform" >
+      <a   (click)="createBoard()" id="newBoardEvent">
+        <p>
+          <i class="fa-solid fa-folder-plus"></i>
+        </p>
+        <h2>Nuevo<br>tablero</h2>
+      </a>
+      <p>
+    </article>
+    <article class="profile transform">
+      <a routerLink="/profile">
+        <p>
+          <i class="fa-solid fa-user"></i>
+        </p>
+        <h2>Mi perfil</h2>
+      </a>
+    </article>
+  </section>
+</main>
+<app-footer></app-footer>

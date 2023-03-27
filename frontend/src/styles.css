@@ -1,0 +1,152 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Rajdhani", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --bold: 700;
+  --regular: 400;
+  --bordo: #c1215a;
+  --background: #343131;
+  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a{
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  transition: all 1s ease;
+}
+
+.btn {
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-weight: var(--bold);
+  margin-top: 10px;
+  width: 20vw;
+  align-self: center;
+}
+
+.btn::after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 300ms ease-in-out;
+  background-color: var(--bordo);
+}
+
+.btn:hover::after {
+  top: 0px;
+  left: 0px;
+
+}
+
+.bodyForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bodyFormImg {
+  max-width: 30vw;
+}
+
+.form {
+  font-weight: var(--bold);
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.formInput {
+  height: 40px;
+}
+
+.formInput:active {
+  outline: solid var(--bordo) 2px;
+  border-radius: 3px;
+}
+
+.formInput:focus {
+  outline: solid var(--bordo) 2px;
+  border-radius: 3px;
+}
+
+.transform:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+#taskContainerProcess > .cdk-drag > .card > .titleToDo{
+  background-color: rgba(193, 167, 33, 0.85);
+  transition: all 1s;
+}
+
+#taskContainerDone > .cdk-drag > .card > .titleToDo{
+  background-color: rgba(33, 193, 87, 0.85);
+  transition: all 1s;
+}
+#taskContainerDone > .cdk-drag > .card > .titleToDo, #taskContainerDone > .cdk-drag > .card > .descriptionToDo {
+  text-decoration:line-through;
+}
+
+.formInput{
+  width: 100%;
+}
+
+.contenedorPass{
+  position: relative;
+}
+
+.modo-oscuro {
+  background-color: #474444;
+  transition: all 1s ease;
+  color: white;
+}
+
+.modo-oscuro input{
+  background-color: #474444;
+  color: white;
+  border-bottom: solid 1px #c1215a;
+}
+
+.modo-oscuro label{
+font-weight: bold;
+}
+
+.modo-oscuro img{
+  opacity: 1;
+}
+
+input{
+  transition: all 1s ease;
+}
+
+
+

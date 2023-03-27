@@ -1,0 +1,49 @@
+<app-loader></app-loader>
+<main class="bodyForm">
+  <img class="bodyFormImg" src="/assets/img/logo-backlog.svg" alt="logo de backlog" />
+  <form class="form" method="GET" class="form" id="register"  [formGroup]="registerForm"
+        (ngSubmit)="onSubmit()">
+    <label class= "formLabel" for="nameRegister" name="name"> Nombre </label>
+    <input class="formInput" type="text" formControlName="name" id="nameRegister"/>
+    <div *ngIf="registerForm.controls['name'].invalid && (registerForm.controls['name'].dirty
+       ||
+      registerForm.controls['name'].touched)">
+      <p class="errorText">* Este campo debe estar completo</p>
+    </div>
+    <label class= "formLabel" for="lastnameRegister" name="lastname">Apellido</label>
+    <input class="formInput" type="text" formControlName="lastname" id="lastnameRegister"/>
+    <div *ngIf="registerForm.controls['lastname'].invalid &&
+    (registerForm.controls['lastname'].dirty
+       ||
+      registerForm.controls['lastname'].touched)">
+      <p class="errorText">* Este campo debe estar completo</p>
+    </div>
+    <label class= "formLabel" for="emailRegister">Mail</label>
+    <input class="formInput" type="email" formControlName="mail" id="emailRegister"/>
+    <div *ngIf="registerForm.controls['mail'].invalid && (registerForm.controls['mail'].dirty ||
+    registerForm.controls['mail'].touched)">
+      <p class="errorText" *ngIf="registerForm.controls['mail'].errors?.['required']">* Este campo
+        debe
+        estar completo</p>
+      <p class="errorText" *ngIf="registerForm.controls['mail'].errors?.['email']">* Debes
+        ingresar un email válido</p>
+    </div>
+    <div *ngIf="credencialesInvalidas" class="errorText">Usuario ya registrado con este mail</div>
+    <label class= "formLabel" for="passwordRegister" name="password">Contraseña</label>
+    <div class="contenedorPass">
+      <input class="formInput" type="password" formControlName="password" id="passwordRegister"/>
+      <span class="password-toggle" (click)="togglePasswordVisibility()" aria-label="Toggle password visibility">
+  <i class="fa fa-eye"></i>
+</span>
+    </div>
+    <div *ngIf="registerForm.controls['password'].invalid && (registerForm.controls['password'].dirty
+       ||
+      registerForm.controls['password'].touched)">
+      <p class="errorText">* Este campo debe estar completo</p>
+    </div>
+    <button class="btn" id="registrar">Registrate</button>
+  </form>
+  <article class="account">¿Ya tienes cuenta?
+    <a routerLink="/login"><b>Inicia sesión</b></a>
+  </article>
+</main>
