@@ -10,7 +10,7 @@ Proyecto integrador Bootcamp Academ IT - ASJ Servicios
 
 ### Descripción del proyecto
 
-
+![Portada backlog](/assets/img/presentation.png)
 
 Backlog es un proyecto integrador para el Bootcamp de la empresa ASJ Servicios - Academ IT. El proyecto se basa en tableros "todo list", podés registrarte, iniciar sesión, editar tu perfil, crear un tablero, editarlo (título y fondo), crear las cards, utilizar drag and drop para mover las cards y modificar su estado, editarlas y eliminarlas.
 La idea es que el usuario puede tener múltiples tableros para organizar sus tareas, día, trabajo, estudio, etc.
