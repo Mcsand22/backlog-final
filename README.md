@@ -22,7 +22,7 @@ La idea es que el usuario puede tener múltiples tableros para organizar sus tar
 El proyecto fue realizado por Macarena Bernal Ramírez: Diseñadora UX/UI & Fullstack Web Developer
 
 ### Herramientas utilizadas
-* [Angular]([https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png))
+* ![Angular]([https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png))
 * [Typescript](https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css)
 * [HTML5](https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css)
 * [CSS3](https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css)
